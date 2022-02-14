@@ -54,8 +54,12 @@ td{
 						int saleQty = rs.getInt(7);
 						int unitprice = rs.getInt(8);
 						int i_total = rs.getInt(9);
-						double discount = rs.getInt(9)*0.9;
-						no++;
+						double discount = 0;
+						if(saleQty>=5){
+							discount=i_total*0.9;
+						}else{
+							discount=i_total;
+						}
 					
 			%>
 			
