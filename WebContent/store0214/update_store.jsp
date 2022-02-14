@@ -43,10 +43,6 @@ span{
 			document.form.submit();
 		}
 	}
-	
-	function changesubmit(){
-		document.form.submit();
-	}
 </script>
 </head>
 <body>
@@ -59,7 +55,7 @@ span{
 		String send_productCode = request.getParameter("productCode");
 		
 		try{
-			String sql = "select a.storeCode, a.storeName, a.productCode, b.productName a.Qty from store0214 a, product0214 b where a.productCode=b.productCode and a.storeCode=? and a.productCode=?";
+			String sql = "select a.storeCode, a.storeName, a.productCode, b.productName, a.Qty from store0214 a, product0214 b where a.productCode=b.productCode and a.storeCode=? and a.productCode=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, send_storeCode);
 			pstmt.setString(2, send_productCode);

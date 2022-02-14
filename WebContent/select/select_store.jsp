@@ -85,13 +85,13 @@ td{
 			
 			<tr>
 				<td><%=no %></td>
-				<td id="td1"><a href="/HRD0214/product0214/update_store.jsp?productCode=<%=productCode%>&storeCode=<%=storeCode%>"><%=storeCode %></a></td>
+				<td id="td1"><a href="/HRD0214/store0214/update_store.jsp?storeCode=<%=storeCode%>&productCode=<%=productCode%>"><%=storeCode %></a></td>
 				<td><%=storeName %></td>
 				<td><%=productCode %></td>
 				<td><p id="p2"><%=productName %></p></td>
 				<td><%=Qty %></td>
 				<td>
-				<a href="/HRD0214/product0214/delete_store.jsp?productCode=<%=productCode%>&storeCode=<%=storeCode%>" onclick="if(!confirm('정말로 삭제하시겠습니까?')){return false}">삭제</a></td>				
+				<a href="/HRD0214/store0214/delete_store.jsp?storeCode=<%=storeCode%>&productCode=<%=productCode%>" onclick="if(!confirm('정말로 삭제하시겠습니까?')){return false}">삭제</a></td>				
 			</tr>
 			
 			<%
